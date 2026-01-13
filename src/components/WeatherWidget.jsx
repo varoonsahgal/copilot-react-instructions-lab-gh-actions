@@ -6,17 +6,7 @@ const INITIAL_TEMPERATURE = 72
 const TEMP_INCREMENT = 1
 const ABSOLUTE_ZERO_F = -459.67
 
-/**
- * WeatherWidget Component
- * Displays temperature with controls to increment and decrement the value.
- * Supports both Fahrenheit and Celsius units.
- * 
- * @component
- * @param {Object} props - Component props
- * @param {number} [props.initialTemp=72] - Initial temperature in Fahrenheit
- * @param {string} [props.unit='F'] - Temperature unit to display ('F' or 'C')
- * @returns {JSX.Element} The weather widget component
- */
+
 export default function WeatherWidget({ initialTemp = INITIAL_TEMPERATURE, unit = 'F' }) {
   const [tempF, setTempF] = useState(initialTemp)
 
